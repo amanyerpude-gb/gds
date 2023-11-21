@@ -2,7 +2,7 @@
 node_modules/
 
 # Ignore build folder
-build/
+# build/
 
 # Ignore any log files
 *.log
