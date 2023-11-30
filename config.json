@@ -12,6 +12,16 @@
                     "format": "scss/variables"
                 }
             ]
+        },
+        "ios": {
+            "transformGroup": "ios/tokens-studio",
+            "buildPath": "build/swift/",
+            "files": [
+                {
+                    "destination": "variables.swift",
+                    "format": "ios-swift/class.swift"
+                }
+            ]
         }
     }
 }
