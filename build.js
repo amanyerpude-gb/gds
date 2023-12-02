@@ -2,6 +2,7 @@ const StyleDictionary = require("style-dictionary");
 const { registerTransforms, transforms } = require("@tokens-studio/sd-transforms");
 
 registerTransforms(StyleDictionary, {
+    expand: { composition: true, typography: true, border: true, shadow: true },
     excludeParentKeys: true,
 });
 
@@ -17,6 +18,19 @@ StyleDictionary.registerTransformGroup({
         'asset/objC/literal',
         'size/remToPt',
         'font/objC/literal'
+    ],
+});
+
+StyleDictionary.registerTransformGroup({
+    name: 'android/tokens-studio',
+    transforms: [
+        ...transforms,
+        // transforms that are inside android transformGroup usually
+        'attribute/cti',
+        'name/cti/snake',
+        'color/hex8android',
+        'size/remToSp',
+        'size/remToDp'
     ],
 });
 

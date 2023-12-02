@@ -22,6 +22,16 @@
                     "format": "ios-swift/class.swift"
                 }
             ]
+        },
+        "android": {
+            "transformGroup": "android/tokens-studio",
+            "buildPath": "build/android/",
+            "files": [
+                {
+                    "destination": "variables.xml",
+                    "format": "android/resources"
+                }
+            ]
         }
     }
 }
